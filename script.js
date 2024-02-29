@@ -66,6 +66,8 @@ function checkAnswer(currentLevel) {
         started = false;
         gamePattern = [];
         level = 0;
+        var audio = new Audio("sounds/wrong.mp3");
+        audio.play();
         
     setTimeout(()=>{
         $('.body').removeClass("game-over");
